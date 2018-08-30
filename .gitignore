@@ -1,5 +1,8 @@
+#Gra*
 .gradle
 /build/
+*.db
+exploded
 
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -12,3 +15,20 @@ gradle-app.setting
 
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
+
+
+## Idea project files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.project
+.classpath
+
+classes/
+logs
+.settings
+out/
+
