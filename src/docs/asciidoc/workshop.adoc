@@ -1,0 +1,24 @@
+= Grails Workshop
+Brian Johnsen, @brianjohnsendk
+
+
+== Intro
+`N00B to ninja på 4 timer`
+
+=== whoami
+
+16+ år Java +
+10+ år Groovy & Grails +
+Your Friendly Neighborhood GR8Conf Organizer
+
+
+== Groovy
+
+
+== Grails
+
+[source,groovy,linenums]
+.Application.groovy
+----
+include::{sourcedir}/grails-app/init/grails/workshop/Application.groovy[indent=0]
+----

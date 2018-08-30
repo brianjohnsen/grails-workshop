@@ -1,0 +1,20 @@
+= Grails Workshop
+
+Groovy og Grails Workshop
+
+
+
+
+== Live Reload
+
+The Gradle build also can support http://asciidoctor.org/docs/editing-asciidoc-with-live-preview/#livereload[Live Reload]
+
+Start by running the build with Gradle 2.5+ https://docs.gradle.org/2.5/userguide/continuous_build.html[continuous build] feature.
+
+ $ ./gradlew -t asciidoctor
+
+This ensures if you modify any *.adoc file then everything is rebuilt.
+
+Open another terminal and run the liveReload task:
+
+ $ ./gradlew liveReload
