@@ -109,7 +109,7 @@ asciidoctor {
         'source-highlighter': 'coderay',
         'coderay-linenums-mode': 'table',
         'imagesdir': 'images',
-        'toc': 'left',
+        'toc': 'right',
         'icons': 'font'
 }
 
