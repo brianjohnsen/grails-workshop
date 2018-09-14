@@ -1,0 +1,33 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+}
+plugins {
+    id 'org.kordamp.gradle.livereload' version '0.2.1'
+}
+
+version "0.1"
+group "grails.workshop"
+
+apply plugin: "idea"
+
+
+apply plugin: 'java'
+apply plugin: 'org.kordamp.gradle.livereload'
+
+
+
+
+repositories {
+    mavenLocal()
+    maven { url "https://repo.grails.org/grails/core" }
+    jcenter()
+}
+
+
+
+liveReload {
+    docRoot "$projectDir"
+}
