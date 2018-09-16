@@ -313,7 +313,7 @@ interface PersonService {
                         <li>The C in MVC</li>
                         <li>Data binding</li>
                         <li>Delegating to business logic</li>
-                        <li>Automatic Content Negotiation</li>
+                        <li>Automatic content negotiation</li>
                         <li>Database console (/dbconsole)</li>
 
                     </ul>
@@ -332,9 +332,22 @@ interface PersonService {
                 </section>
 
 
+                <section>
+                    <h2>Data binding</h2>
+                    <ul>
+                        <li>Action argument<br>
+                            <code>def update(Person person) {...}</code>
+                        </li>
+                        <li>Injected properties<br>
+                            <code>session</code>,
+                            <code>params</code>,
+                            <code>request</code>,
+                            <code>response</code>
+                        </li>
+                    </ul>
+                </section>
+
             </section>
-
-
 
 
             <!------------------------------------------------------->
@@ -371,58 +384,38 @@ interface PersonService {
                     <p><code>/grails-app/services/</code></p>
                     <br/>
                     <ul>
-                        <li>Should contain all business logic</li>
+                        <li>Dependency injection</li>
+                        <li>Should contain <strong>all</strong> business logic</li>
                         <li>Transactional</li>
-                        <li>Injected into any artefact</li>
                     </ul>
                 </section>
 
                 <section>
-                    <h2>Create the service</h2>
-                    <img src="images/work.jpeg"/>
+                    <h2>Create service</h2>
                     <p>
                     <pre><code data-trim>$ grails create-service Person</code></pre>
-                    </p>
-
-                    <p>Open:</p>
-                    <pre><code data-trim>grails-app/services/demo/PersonService.groovy</code></pre>
-                </section>
-
-                <section>
-                    <h2>Update the service</h2>
-                    <p>
-                    <pre><code data-trim>
-@Transactional
-class PersonService {
-    def getAll() {
-        Person.list()
-    }
-}
-
-                </code></pre>
-                    </p>
-                </section>
-
-                <section>
-                    <h2>Update the controller</h2>
-                    <p>
-                    <pre><code data-trim>
-class PersonController {
-
-    PersonService personService //injected by grails
-
-    def index(Integer max) {
-        respond personService.getAll()
-    }
-...
-}
-                </code></pre>
                     </p>
                 </section>
 
             </section>
 
 
+            <!------------------------------------------------------->
+            <!---- PLUGINS ------------------------------------------>
+            <!------------------------------------------------------->
+            <section>
+                <h2>Plugins</h2>
+                <p><code>http://plugins.grails.org/</code></p>
+                <br/>
+                <ul>
+                    <li>Build Test Data</li>
+                    <li>Mail / GreenMail</li>
+                    <li>Audit-Logging</li>
+                    <li>Quartz</li>
+                    <li>CXF (SOAP)</li>
+                    <li>and it goes on and on...</li>
+                </ul>
+            </section>
 
 
         </div>
